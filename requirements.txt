@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+ipython
+six
+tensorflow
+gym
