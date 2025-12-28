@@ -196,3 +196,8 @@ print("\nTWO MODELS TRAINED & COMPARED!")
 print(f"Linear Classifier: {linear_results[1]:.1%} accuracy (~79%)")
 print(f"Neural Network:    {neural_results[1]:.1%} accuracy (~85%)")
 print("\nTraining completed successfully!")
+
+# Display a sample prediction
+print("\nSAMPLE EVALUATION DATA & PREDICTION:")
+print(dfeval.loc[0])  # Display first row of evaluation data
+print(f"Probability of survival (first eval instance): {y_pred_proba[0][0]:.4f}")  # Display probability of survival for first eval instance
