@@ -38,3 +38,4 @@ dfeval = pd.read_csv('../data/titanic/eval.csv') # testing data
 y_train = dftrain.pop('survived')
 y_eval = dfeval.pop('survived')
 print(dftrain.head())
+print(dftrain.loc[0], y_train.loc[0])
