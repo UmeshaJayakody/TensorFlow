@@ -79,10 +79,10 @@ X_eval = encode_features(dfeval)
 print(f"\nEncoded features shape: {X_train.shape}")
 
 # ===========================================
-# 1️⃣ LINEAR CLASSIFIER (Logistic Regression)
+# 1. LINEAR CLASSIFIER (Logistic Regression)
 # ===========================================
 print("\n" + "="*50)
-print("📏 BUILDING LINEAR CLASSIFIER (Logistic Regression)")
+print("BUILDING LINEAR CLASSIFIER (Logistic Regression)")
 print("="*50)
 
 linear_model = keras.Sequential([
@@ -99,7 +99,7 @@ print("Linear Model Summary:")
 linear_model.summary()
 
 # Train Linear
-print("\n🚀 Training Linear Classifier...")
+print("\nTraining Linear Classifier...")
 linear_history = linear_model.fit(
     X_train, y_train,
     epochs=50,
@@ -109,15 +109,15 @@ linear_history = linear_model.fit(
 )
 
 linear_results = linear_model.evaluate(X_eval, y_eval, verbose=0)
-print(f"\n📏 LINEAR CLASSIFIER RESULTS:")
+print(f"\nLINEAR CLASSIFIER RESULTS:")
 print(f"   Loss: {linear_results[0]:.4f}")
 print(f"   Accuracy: {linear_results[1]:.4f}")
 
 # ===========================================
-# 2️⃣ NEURAL NETWORK (Deep Learning)
+# 2. NEURAL NETWORK (Deep Learning)
 # ===========================================
 print("\n" + "="*50)
-print("🧠 BUILDING NEURAL NETWORK")
+print("BUILDING NEURAL NETWORK")
 print("="*50)
 
 neural_model = keras.Sequential([
@@ -141,7 +141,7 @@ print("Neural Network Summary:")
 neural_model.summary()
 
 # Train Neural
-print("\n🚀 Training Neural Network...")
+print("\nTraining Neural Network...")
 neural_history = neural_model.fit(
     X_train, y_train,
     epochs=50,
@@ -151,20 +151,20 @@ neural_history = neural_model.fit(
 )
 
 neural_results = neural_model.evaluate(X_eval, y_eval, verbose=0)
-print(f"\n🧠 NEURAL NETWORK RESULTS:")
+print(f"\nNEURAL NETWORK RESULTS:")
 print(f"   Loss: {neural_results[0]:.4f}")
 print(f"   Accuracy: {neural_results[1]:.4f}")
 
 # ===========================================
-# 📊 COMPARISON & PREDICTIONS
+# COMPARISON & PREDICTIONS
 # ===========================================
 clear_output()
 
-print("🎉 COMPLETE RESULTS COMPARISON")
+print("COMPLETE RESULTS COMPARISON")
 print("="*60)
-print(f"📏 LINEAR CLASSIFIER:     {linear_results[1]:.1%} accuracy")
-print(f"🧠 NEURAL NETWORK:       {neural_results[1]:.1%} accuracy")
-print(f"📈 Improvement:          {((neural_results[1]-linear_results[1])*100):.1f}% better")
+print(f"LINEAR CLASSIFIER:     {linear_results[1]:.1%} accuracy")
+print(f"NEURAL NETWORK:       {neural_results[1]:.1%} accuracy")
+print(f"Improvement:          {((neural_results[1]-linear_results[1])*100):.1f}% better")
 print("="*60)
 
 # Predictions for histogram (using Neural Network)
@@ -183,16 +183,16 @@ plt.savefig('./graph_output/module_03/plot_7.png', dpi=150)
 plt.close()
 
 # ===========================================
-# ✅ FINAL SUMMARY
+# FINAL SUMMARY
 # ===========================================
-print("\n✅ ALL FILES GENERATED:")
-print("   📊 plot_3.png  - Age Distribution")
-print("   👥 plot_4.png  - Sex Distribution") 
-print("   🏢 plot_5.png  - Class Distribution")
-print("   🎯 plot_6.png  - Survival by Sex")
-print("   📈 plot_7.png  - Prediction Probabilities")
+print("\nALL FILES GENERATED:")
+print("   plot_3.png  - Age Distribution")
+print("   plot_4.png  - Sex Distribution") 
+print("   plot_5.png  - Class Distribution")
+print("   plot_6.png  - Survival by Sex")
+print("   plot_7.png  - Prediction Probabilities")
 
-print("\n🎯 TWO MODELS TRAINED & COMPARED!")
-print(f"📏 Linear Classifier: {linear_results[1]:.1%} accuracy (~79%)")
-print(f"🧠 Neural Network:    {neural_results[1]:.1%} accuracy (~85%)")
-print("\n🚀 Training completed successfully!")
+print("\nTWO MODELS TRAINED & COMPARED!")
+print(f"Linear Classifier: {linear_results[1]:.1%} accuracy (~79%)")
+print(f"Neural Network:    {neural_results[1]:.1%} accuracy (~85%)")
+print("\nTraining completed successfully!")
