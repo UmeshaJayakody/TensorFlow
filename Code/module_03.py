@@ -30,10 +30,6 @@ plt.savefig('./graph_output/module_03/plot_2.png')  # Save the plot with line as
 # Import necessary libraries for data handling and TensorFlow
 import pandas as pd
 from IPython.display import clear_output
-from six.moves import urllib
-
-import tensorflow.compat.v2.feature_column as fc
-
 import tensorflow as tf
 
 # Load dataset.
