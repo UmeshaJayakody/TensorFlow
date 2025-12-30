@@ -5,3 +5,4 @@ ipython
 six
 tensorflow
 gym
+tensorflow_probability
