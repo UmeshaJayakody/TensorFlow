@@ -57,13 +57,18 @@ Before starting, ensure you have the following installed:
 TensorFlow/
 ├── README.md                 # This file
 ├── requirements.txt          # Python dependencies
+├── text.txt                  # Additional notes
 ├── Code/                     # Python script examples
 │   ├── add_data.py          # Data augmentation for Titanic dataset
 │   ├── module_02.py         # TensorFlow tensor operations
 │   ├── module_03_1.py       # Basic plotting and linear regression
 │   ├── module_03_2.py       # Titanic survival prediction (linear vs neural network)
 │   ├── module_03_3.py       # Iris classification (linear vs deep neural network)
+│   ├── module_03_4.py       # Hidden Markov Models
+│   ├── module_04_1.py       # Neural Networks with Fashion MNIST
 │   └── graph_output/        # Generated plots and visualizations
+│       ├── module_03/
+│       └── module_04/
 ├── data/                    # Datasets
 │   ├── iris/                # Iris flower dataset
 │   │   ├── iris_test.csv
@@ -76,7 +81,9 @@ TensorFlow/
 ├── Note/                    # Jupyter notebooks
 │   ├── 01_introduction.ipynb          # Types of machine learning
 │   ├── 02_Tensorfloe_introduction.ipynb  # TensorFlow fundamentals
-│   └── 03_Core_Learning_Algorithms.ipynb # Core ML algorithms
+│   ├── 03_Alternative.ipynb           # Alternative explanations of core algorithms
+│   ├── 03_Core_Learning_Algorithms.ipynb # Core ML algorithms
+│   └── 04_Neural_Networks.ipynb       # Neural Networks tutorial
 └── .venv/                   # Virtual environment (created during setup)
 ```
 
@@ -113,6 +120,14 @@ TensorFlow/
 #### Hidden Markov Models
 - Sequential data modeling
 - Time-series prediction
+- Probability distributions and state transitions
+
+### Module 4: Neural Networks
+- Introduction to Keras API
+- Building and training neural networks
+- Fashion MNIST classification example
+- Model evaluation and predictions
+- Visualization of results
 
 ## Datasets
 
@@ -142,6 +157,8 @@ TensorFlow/
    python module_03_1.py  # Basic plotting
    python module_03_2.py  # Titanic classification
    python module_03_3.py  # Iris classification
+   python module_03_4.py  # Hidden Markov Models
+   python module_04_1.py  # Neural Networks with Fashion MNIST
    ```
 
 3. For data augmentation:
@@ -159,7 +176,9 @@ TensorFlow/
 2. Open notebooks in the Note/ directory:
    - `01_introduction.ipynb`: Learn about ML types
    - `02_Tensorfloe_introduction.ipynb`: Interactive TensorFlow tutorial
+   - `03_Alternative.ipynb`: Simplified explanations of core algorithms
    - `03_Core_Learning_Algorithms.ipynb`: Core algorithms walkthrough
+   - `04_Neural_Networks.ipynb`: Neural Networks with Fashion MNIST
 
 ### Data Processing
 
@@ -187,10 +206,18 @@ TensorFlow/
 - **Evaluation**: Accuracy comparison and predictions
 - **Interactive**: User input prediction feature
 
+### Fashion MNIST Classification
+- **Neural Network**: Multi-layer perceptron for image classification
+- **Dataset**: 10 clothing categories with 28x28 grayscale images
+- **Training**: Model compilation, fitting, and evaluation
+- **Predictions**: Visualizing predictions vs actual labels
+
 ## Generated Outputs
 
 Running the scripts will create:
 - `graph_output/module_03/plot_*.png`: Various data visualizations
+- `graph_output/module_04/sample_image.png`: Fashion MNIST sample images
+- `graph_output/module_04/sample_image_test.png`: Test predictions visualization
 - Model training logs and performance metrics
 - Prediction examples and comparisons
 
@@ -200,7 +227,9 @@ Running the scripts will create:
 2. **TensorFlow Basics**: Study `02_Tensorfloe_introduction.ipynb` and `module_02.py`
 3. **Hands-on Practice**: Run `module_03_1.py` for basic plotting
 4. **Classification Examples**: Execute `module_03_2.py` and `module_03_3.py`
-5. **Advanced Topics**: Explore `03_Core_Learning_Algorithms.ipynb`
+5. **Advanced Algorithms**: Try `module_03_4.py` for Hidden Markov Models
+6. **Neural Networks**: Explore `04_Neural_Networks.ipynb` and `module_04_1.py`
+7. **Alternative Explanations**: Review `03_Alternative.ipynb` for simplified concepts
 
 ## Contributing
 
