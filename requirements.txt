@@ -6,3 +6,4 @@ six
 tensorflow
 gym
 tensorflow_probability
+tensorflow_datasets
